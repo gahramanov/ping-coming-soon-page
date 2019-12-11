@@ -30,11 +30,21 @@ h1 {color:hsl(209, 33%, 12%)}
   .container {
     max-width: 730px;
   }
+
+
+  .email-input {
+    max-width: calc(100% - 280px);
+  }
+  .notify-button {
+    max-width: 200px;
+    margin-left: 15px;
+    margin-top: 0 !important;
+  }
 }
 
 @media (min-width: 992px) {
   .container {
-    /* max-width: 960px; */
+    max-width: 950px;
   }
 }
 
@@ -60,11 +70,13 @@ form {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
   margin-top: 2rem;
 }
+
 .email-input,
 .notify-button {
   border-radius: 30px;
@@ -77,15 +89,36 @@ form {
 
 .email-input {
   border: 1px solid hsl(223, 100%, 88%);
-  color: hsl(209, 33%, 12%)
+  color: hsl(209, 33%, 12%);
 }
 
 .email-input:focus {
   border: 1px solid hsl(223, 87%, 63%);
 }
 
-
 .email-input::placeholder {color: hsla(0, 0%, 59%, 0.479);}
+
+.email-err {
+  border: 1px solid hsl(354, 100%, 66%) !important;
+  margin-bottom: 2rem;
+}
+
+.err-msg {
+  display: none;
+  color: hsl(354, 100%, 66%);
+  font-size: .7rem;
+  font-style: italic;
+  font-weight: 500;
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.err-msg-show {
+  display: block;
+}
 
 .notify-button {
   color: white;

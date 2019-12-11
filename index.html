@@ -37,18 +37,20 @@
   </head>
   <body>
     <div class="container">
-      <img src="images/logo.svg" alt="logo" />
+      <svg width="86" height="26" xmlns="http://www.w3.org/2000/svg"><text transform="translate(-677 -86)" fill="none" fill-rule="evenodd" font-family="LibreFranklin-Bold, Libre Franklin" font-size="32" font-weight="bold"><tspan x="675" y="111" fill="#15202A">PING</tspan> <tspan x="756.312" y="111" fill="#4C7BF3">.</tspan></text></svg>
       <h1><span class="light">We are launching </span>soon!</h1>
       <h4>Subscribe and get notified</h4>
-      <form action="#">
+      <form>
         <input
           type="email"
+          id="email"
           class="email-input"
           aria-label="Enter email address"
           placeholder="Your email eddress..."
           required
         />
-        <input type="submit" value="Notify Me" class="notify-button" />
+        <p class="err-msg" id="email-err">Please provide a valid email address</p>
+        <input type="submit" value="Notify Me" class="notify-button" id="submit"/>
       </form>
       <img
         src="images/illustration-dashboard.png"
@@ -70,5 +72,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
-  </body>
+  <script src="form.js"></script>
+</body>
 </html>
