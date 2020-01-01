@@ -69,8 +69,6 @@ h4 {
   color: hsl(209, 33%, 12%);
 }
 
-form {margin-bottom: 3rem;}
-
 .img-fluid {
   width: 80%;
   font-family: 'Libre Franklin', sans-serif;
@@ -80,12 +78,10 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 75%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2rem auto 3rem;
   position: relative;
-  margin-top: 2rem;
 }
 
 @media (max-width: 375px) {
